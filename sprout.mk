@@ -18,6 +18,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/go_defaults.mk)
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
+# Use Prebuilt Kernel
+TARGET_PREBUILT_KERNEL := device/google/sprout-common/zImage
+PRODUCT_COPY_FILES += \
+	$(TARGET_PREBUILT_KERNEL):kernel
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml \
