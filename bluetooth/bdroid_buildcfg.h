@@ -17,6 +17,8 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
+#undef PROPERTY_VALUE_MAX
+
 #define BTA_DISABLE_DELAY 1000 /* in milliseconds */
 #define BTM_DEF_LOCAL_NAME        "Android One 1st Gen"
 
